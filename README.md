@@ -1,5 +1,7 @@
 # 📬 ClawMail
 
+![ClawMail Banner](banner.png)
+
 > **Turn any email inbox into a Telegram command center.**
 > Monitor emails, get instant summaries, reply directly from Telegram — no web browser required.
 
