@@ -1,0 +1,11 @@
+.env
+signature.txt
+*.log
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+.DS_Store
+~/ClawMail/
+.clawmail_state.json

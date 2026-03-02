@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "clawmail"
+version = "1.0.0"
+description = "Email-to-Telegram forwarding agent with two-way reply support"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+keywords = ["email", "telegram", "imap", "smtp", "bot", "automation", "forwarding"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: Internet",
+]
+
+[project.scripts]
+clawmail = "clawmail.agent:run"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/clawmail"
+Issues   = "https://github.com/yourusername/clawmail/issues"
+
+[tool.setuptools.packages.find]
+include = ["clawmail*"]
